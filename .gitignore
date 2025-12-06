@@ -1,6 +1,7 @@
 # Manually added ignores
 data/
 output/
+wandb/
 
 
 # Byte-compiled / optimized / DLL files
