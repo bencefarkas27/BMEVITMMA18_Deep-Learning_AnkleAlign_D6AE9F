@@ -18,6 +18,8 @@ import sys
 from utils import setup_logger
 import config
 
+import net0
+
 logger = setup_logger()
 device = "cpu"
 
@@ -65,14 +67,14 @@ def baseline(train_data, test_data):
     logger.info(f"Detailed Classification Report: \n{classification_report(true_labels, predicted_labels)}")
 
 
-def create_torch_dataloader(data, transform, batch_size=32, shuffle=False):
+def create_torch_dataloader(data, transform, batch_size=16, shuffle=False):
     images = []
     labels = []
 
     for img_name, label in data:
         img_path = os.path.join(preped_folder, img_name)
         try:
-            img = Image.open(img_path).convert('RGB')
+            img = Image.open(img_path).convert('L')
             img_tensor = transform(img)
             images.append(img_tensor)
             labels.append(label)
@@ -92,8 +94,108 @@ def create_torch_dataloader(data, transform, batch_size=32, shuffle=False):
 
     return dataloader
 
-def train():
-    logger.info("Starting training process...")
+class EarlyStopping:
+    def __init__(self, patience=5, min_delta=0.001, verbose=True):
+        self.patience = patience
+        self.min_delta = min_delta
+        self.verbose = verbose
+        self.counter = 0
+        self.best_loss = None
+        self.early_stop = False
+        self.best_model = None
+        
+    def __call__(self, val_loss, model):
+        if self.best_loss is None:
+            self.best_loss = val_loss
+            self.best_model = model.state_dict().copy()
+        elif val_loss > self.best_loss - self.min_delta:
+            self.counter += 1
+            if self.verbose:
+                logger.info(f'EarlyStopping counter: {self.counter} out of {self.patience}')
+            if self.counter >= self.patience:
+                self.early_stop = True
+        else:
+            self.best_loss = val_loss
+            self.best_model = model.state_dict().copy()
+            self.counter = 0
+
+def init_weights(m):
+    if isinstance(m, torch.nn.Conv2d) or isinstance(m, torch.nn.Linear):
+        torch.nn.init.kaiming_uniform_(m.weight, mode='fan_in', nonlinearity='relu')
+        if m.bias is not None:
+            torch.nn.init.constant_(m.bias, 0)
+
+def train_model(network, optimizer, loss_fn, num_epochs, enable_early_stopping=False, patience=5):
+    torch.cuda.empty_cache()
+
+    loss_values = []
+
+    if enable_early_stopping:
+        early_stopping = EarlyStopping(patience=patience, verbose=True)
+
+    network.train()
+    for epoch in tqdm(range(num_epochs), desc='Training model'):
+        network.train()
+        epoch_loss = 0.0
+        num_batches = 0
+        for images, target_labels in train_loader:
+            images = images.to(device)
+            target_labels = target_labels.to(device)
+
+            pred_logits = network(images)
+            loss = loss_fn(pred_logits, target_labels)
+            epoch_loss += loss.item()
+            num_batches += 1
+
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+        avg_train_loss = epoch_loss / num_batches
+
+        if enable_early_stopping:
+            network.eval()
+            val_loss = 0.0
+            val_batches = 0
+            correct = 0
+            total = 0
+            with torch.no_grad():
+                for images, target_labels in val_loader:
+                    images = images.to(device)
+                    target_labels = target_labels.to(device)
+                    
+                    pred_logits = network(images)
+                    loss = loss_fn(pred_logits, target_labels)
+                    val_loss += loss.item()
+                    val_batches += 1
+                    
+                    _, predicted = torch.max(pred_logits, 1)
+                    total += target_labels.size(0)
+                    correct += (predicted == target_labels).sum().item()
+            
+            avg_val_loss = val_loss / val_batches
+            val_accuracy = correct / total
+
+        loss_values.append(avg_train_loss)
+        
+        if enable_early_stopping:
+            logger.info(f"Epoch {epoch+1}/{num_epochs}, Train Loss: {avg_train_loss:.4f}, Val Loss: {avg_val_loss:.4f}, Val Acc: {val_accuracy:.4f}")
+        else:
+            logger.info(f"Epoch {epoch+1}/{num_epochs}, Train Loss: {avg_train_loss:.4f}")
+
+        # Early stopping check
+        if enable_early_stopping:
+            early_stopping(avg_val_loss, network)
+            if early_stopping.early_stop:
+                logger.info("Early stopping triggered")
+                network.load_state_dict(early_stopping.best_model)
+                break
+    
+    # Load best model
+    if enable_early_stopping and early_stopping.best_model is not None:
+        network.load_state_dict(early_stopping.best_model)
+        logger.info("Loaded best model weights")
+
+    logger.info(loss_values)
     
 
 if __name__ == "__main__":
@@ -108,7 +210,7 @@ if __name__ == "__main__":
     transform = transforms.Compose([
         transforms.Resize((224, 224)),  # Resize to consistent size
         transforms.ToTensor(),           # Convert to tensor [0, 1]
-        transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])  # ImageNet normalization
+        transforms.Normalize(mean=[0.5], std=[0.5])
     ])
 
     check_cuda()
@@ -118,4 +220,6 @@ if __name__ == "__main__":
     test_loader = create_torch_dataloader(test_data, transform, batch_size=config.BATCH_SIZE, shuffle=False)
     logger.info(f"Train loader size: {len(train_loader.dataset)}")
     logger.info(f"Test loader size: {len(test_loader.dataset)}")
+
+
 
