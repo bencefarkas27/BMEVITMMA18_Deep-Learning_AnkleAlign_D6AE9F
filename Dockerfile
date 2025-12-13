@@ -20,4 +20,4 @@ COPY run.sh run.sh
 RUN mkdir -p /app/data
 RUN chmod +x /app/run.sh || true
 
-#CMD ["bash", "/app/run.sh"]
+CMD ["bash", "/app/run.sh"]
