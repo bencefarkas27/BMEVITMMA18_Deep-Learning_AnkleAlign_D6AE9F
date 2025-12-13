@@ -9,12 +9,12 @@ URL="https://bmeedu-my.sharepoint.com/:u:/g/personal/gyires-toth_balint_vik_bme_
 
 OUTPUT="data/anklealign.zip"
 EXTRACT_DIR="data"
-
-wget --no-check-certificate --content-disposition -O "$OUTPUT" "$URL"
+echo "Run wget --no-verbose to download dataset from $URL to $OUTPUT"
+wget -nv --no-check-certificate --content-disposition -O "$OUTPUT" "$URL"
 
 if [ $? -eq 0 ]; then
-    echo "Download completed successfully"
-    unzip -o "$OUTPUT" -d "$EXTRACT_DIR"
+    echo "Download completed successfully, unzipping to $EXTRACT_DIR"
+    unzip -q -o "$OUTPUT" -d "$EXTRACT_DIR"
 else
     echo "Download failed"
     exit 1

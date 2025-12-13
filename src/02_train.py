@@ -158,6 +158,7 @@ def main():
     logger.info(f"Baseline model weights saved to {model_path}")
 
     # Train/validation split for best model
+    transform = get_transforms(data_augmentation=True)
     train_loader, val_loader = create_torch_dataloader(logger, train_data, preped_folder, transform, batch_size=config.BATCH_SIZE, shuffle=True, val_split=0.2)
     logger.info(f"Train loader size: {len(train_loader.dataset)}")
     logger.info(f"Validation loader size: {len(val_loader.dataset)}")

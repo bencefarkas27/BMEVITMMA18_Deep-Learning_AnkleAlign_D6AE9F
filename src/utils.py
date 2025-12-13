@@ -75,15 +75,24 @@ def create_torch_dataloader(logger, data, preped_folder, transform, batch_size=1
         dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=shuffle)
         return dataloader
     
-def get_transforms():
+def get_transforms(data_augmentation=False):
     """
     Returns image transformations for training or inference.
     """
-    return transforms.Compose([
-        transforms.Resize((224, 224)),
-        transforms.ToTensor(),
-        transforms.Normalize(mean=[0.5], std=[0.5])
-    ])
+    if data_augmentation:
+        return transforms.Compose([
+            transforms.Resize((224, 224)),  # Resize to consistent size
+            transforms.RandomHorizontalFlip(p=0.3), # Random horizontal flip
+            transforms.RandomRotation(degrees=15),  # Random rotation
+            transforms.ToTensor(),           # Convert to tensor [0, 1]
+            transforms.Normalize(mean=[0.5], std=[0.5])
+        ])  
+    else:
+        return transforms.Compose([
+            transforms.Resize((224, 224)),
+            transforms.ToTensor(),
+            transforms.Normalize(mean=[0.5], std=[0.5])
+        ])
 
 def load_best_model(model_path, device):
     model = BestNetWork().to(device)
