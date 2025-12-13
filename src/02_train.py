@@ -13,7 +13,7 @@ from torchinfo import summary
 
 from tqdm.auto import tqdm
 
-from utils import setup_logger, check_cuda, create_torch_dataloader
+from utils import setup_logger, check_cuda, create_torch_dataloader, get_transforms
 from networks import BaseLineNetWork, BestNetWork
 import config
 
@@ -135,11 +135,7 @@ def main():
     train_data = pd.read_csv(os.path.join(config.DATA_DIR, 'train_data.csv')).values.tolist()
 
     # Define image transformations
-    transform = transforms.Compose([
-        transforms.Resize((224, 224)),  # Resize to consistent size
-        transforms.ToTensor(),           # Convert to tensor [0, 1]
-        transforms.Normalize(mean=[0.5], std=[0.5])
-    ])
+    transform = get_transforms()
 
     device = check_cuda(logger)
     logger.info(f"Device set to: {device}")

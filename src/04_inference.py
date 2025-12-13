@@ -1,4 +1,4 @@
-from utils import setup_logger, check_cuda, create_torch_dataloader, load_best_model
+from utils import setup_logger, check_cuda, create_torch_dataloader, load_best_model, get_transforms
 from networks import BestNetWork
 import os
 import pandas as pd
@@ -14,11 +14,7 @@ def predict():
     test_data = pd.read_csv(os.path.join(config.DATA_DIR, 'test_data.csv')).values.tolist()
 
     # Define image transformations
-    transform = transforms.Compose([
-        transforms.Resize((224, 224)),  # Resize to consistent size
-        transforms.ToTensor(),           # Convert to tensor [0, 1]
-        transforms.Normalize(mean=[0.5], std=[0.5])
-    ])
+    transform = get_transforms()
     device = check_cuda(logger)
     logger.info(f"Device set to: {device}")
     test_loader = create_torch_dataloader(logger, test_data, preped_folder, transform, batch_size=config.BATCH_SIZE, shuffle=False)

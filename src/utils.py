@@ -7,6 +7,7 @@ import torch
 from PIL import Image
 from torch.utils.data import TensorDataset, DataLoader
 from sklearn.model_selection import train_test_split
+import torchvision.transforms as transforms
 
 def setup_logger(name=__name__):
     """
@@ -37,6 +38,9 @@ def check_cuda(logger):
     return device
 
 def create_torch_dataloader(logger, data, preped_folder, transform, batch_size=16, shuffle=False, val_split=None):
+    """
+    Creates a PyTorch DataLoader from image data and labels. If val_split is provided, splits data into training and validation sets.
+    """
     images = []
     labels = []
 
@@ -71,6 +75,15 @@ def create_torch_dataloader(logger, data, preped_folder, transform, batch_size=1
         dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=shuffle)
         return dataloader
     
+def get_transforms():
+    """
+    Returns image transformations for training or inference.
+    """
+    return transforms.Compose([
+        transforms.Resize((224, 224)),
+        transforms.ToTensor(),
+        transforms.Normalize(mean=[0.5], std=[0.5])
+    ])
 
 def load_best_model(model_path, device):
     model = BestNetWork().to(device)

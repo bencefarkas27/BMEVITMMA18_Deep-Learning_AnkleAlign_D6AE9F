@@ -64,7 +64,7 @@ To run the solution, use the following command. You must mount your local data d
 **To capture the logs for submission (required), redirect the output to a file:**
 
 ```bash
-docker run --gpus all -v $(pwd):/app/data dl-project > log/run.log 2>&1
+docker run --gpus all -v $(pwd)/data:/app/data dl-project > log/run.log 2>&1
 ```
 
 

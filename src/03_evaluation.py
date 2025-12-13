@@ -10,7 +10,7 @@ import config
 from sklearn.metrics import precision_score, recall_score, f1_score, classification_report, balanced_accuracy_score
 
 from networks import BaseLineNetWork, BestNetWork
-from utils import setup_logger, check_cuda, create_torch_dataloader, load_baseline_model, load_best_model
+from utils import setup_logger, check_cuda, create_torch_dataloader, load_baseline_model, load_best_model, get_transforms
 
 logger = setup_logger()
 
@@ -76,12 +76,7 @@ def main():
     stat_baseline(train_data_for_baseline, test_data)
 
     # Define image transformations
-    transform = transforms.Compose([
-        transforms.Resize((224, 224)),  # Resize to consistent size
-        transforms.ToTensor(),           # Convert to tensor [0, 1]
-        transforms.Normalize(mean=[0.5], std=[0.5])
-    ])
-
+    transform = get_transforms()
     device = check_cuda(logger)
     logger.info(f"Device set to: {device}")
 
