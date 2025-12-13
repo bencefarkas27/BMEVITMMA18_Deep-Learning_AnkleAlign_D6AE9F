@@ -22,9 +22,13 @@ fi
 
 echo "[run.sh] Starting full pipeline run at $(date --iso-8601=seconds)"
 
+echo "[run.sh] Running data preprocessing at $(date --iso-8601=seconds)"
 python src/01_data_preprocessing.py
-python src/02-training.py
-python src/03-evaluation.py
-python src/04-inference.py
+echo "[run.sh] Running training at $(date --iso-8601=seconds)"
+python src/02_train.py
+echo "[run.sh] Running evaluation at $(date --iso-8601=seconds)"
+python src/03_evaluation.py
+echo "[run.sh] Running inference at $(date --iso-8601=seconds)"
+python src/04_inference.py
 
 echo "[run.sh] Pipeline finished at $(date --iso-8601=seconds)"
