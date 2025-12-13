@@ -142,8 +142,9 @@ def main():
 
     # Create DataLoader for baseline model
     train_loader = create_torch_dataloader(logger, train_data, preped_folder, transform, batch_size=config.BATCH_SIZE, shuffle=True)
+    logger.info(f"Train loader size: {len(train_loader.dataset)}")
     basline_cnn = BaseLineNetWork().to(device)
-    logger.info(summary(basline_cnn, input_size=(config.BATCH_SIZE, 1, 224, 224)))
+    summary(basline_cnn, input_size=(config.BATCH_SIZE, 1, 224, 224))
 
     # Train the baseline cnn
     loss_fn = torch.nn.CrossEntropyLoss()
@@ -165,7 +166,7 @@ def main():
 
     best_cnn = BestNetWork().to(device)
     best_cnn.apply(init_weights)
-    logger.info(summary(best_cnn, input_size=(config.BATCH_SIZE, 1, 224, 224)))
+    summary(best_cnn, input_size=(config.BATCH_SIZE, 1, 224, 224))
 
     # Train the model
     loss_fn = torch.nn.CrossEntropyLoss()

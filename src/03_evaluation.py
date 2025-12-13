@@ -15,6 +15,7 @@ from utils import setup_logger, check_cuda, create_torch_dataloader, load_baseli
 logger = setup_logger()
 
 def stat_baseline(train_data, test_data):
+    logger.info("Calculating baseline (majority class) performance metrics")
     # Get the majority class from training data
     labels = [label for _, label in train_data]
 
@@ -42,8 +43,8 @@ def stat_baseline(train_data, test_data):
     # For detailed per-class metrics
     logger.info(f"Detailed Classification Report: \n{classification_report(true_labels, predicted_labels)}")
 
-def evaluate(model, test_loader, device):
-    logger.info("Evaluating model on consensus test set")
+def evaluate(model, model_name, test_loader, device):
+    logger.info(f"Evaluating {model_name} on consensus test set")
     true_labels = test_loader.dataset.tensors[1].numpy()
     predicted_labels = []
     model.eval()
@@ -87,13 +88,13 @@ def main():
     model_path = os.path.join(config.MODEL_DIR, 'baseline_weights.pth')
     model = load_baseline_model(model_path, device)
     logger.info(f"Model loaded from {model_path}")
-    evaluate(model, test_loader, device)
+    evaluate(model, "Baseline CNN", test_loader, device)
 
     # Load the best cnn
     best_model_path = os.path.join(config.MODEL_DIR, 'best_cnn_weights.pth')
     best_model = load_best_model(best_model_path, device)
     logger.info(f"Best model loaded from {best_model_path}")
-    evaluate(best_model, test_loader, device)
+    evaluate(best_model, "Best CNN", test_loader, device)
 
 if __name__ == "__main__":
     main()
