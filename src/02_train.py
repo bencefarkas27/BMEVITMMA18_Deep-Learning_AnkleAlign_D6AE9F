@@ -58,11 +58,13 @@ def init_weights(m):
 
 def train_model(device, network, optimizer, loss_fn, num_epochs, train_loader, val_loader=None, patience=5):
     torch.cuda.empty_cache()
+    logger.info(f"Starting training with hyperparameters: num_epochs={num_epochs}, learning_rate={optimizer.param_groups[0]['lr']}")
 
     loss_values = []
 
     if val_loader is not None:
         early_stopping = EarlyStopping(patience=patience, verbose=True)
+        logger.info(f"Early stopping enabled with patience={patience}")
 
     network.train()
     for epoch in tqdm(range(num_epochs), desc='Training model'):
@@ -142,8 +144,9 @@ def main():
 
     # Create DataLoader for baseline model
     train_loader = create_torch_dataloader(logger, train_data, preped_folder, transform, batch_size=config.BATCH_SIZE, shuffle=True)
+    logger.info(f"Train loader size: {len(train_loader.dataset)}")
     basline_cnn = BaseLineNetWork().to(device)
-    logger.info(summary(basline_cnn, input_size=(config.BATCH_SIZE, 1, 224, 224)))
+    summary(basline_cnn, input_size=(config.BATCH_SIZE, 1, 224, 224))
 
     # Train the baseline cnn
     loss_fn = torch.nn.CrossEntropyLoss()
@@ -165,7 +168,7 @@ def main():
 
     best_cnn = BestNetWork().to(device)
     best_cnn.apply(init_weights)
-    logger.info(summary(best_cnn, input_size=(config.BATCH_SIZE, 1, 224, 224)))
+    summary(best_cnn, input_size=(config.BATCH_SIZE, 1, 224, 224))
 
     # Train the model
     loss_fn = torch.nn.CrossEntropyLoss()
