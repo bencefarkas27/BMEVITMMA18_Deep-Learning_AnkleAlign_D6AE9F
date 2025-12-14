@@ -1,242 +1,227 @@
 Run wget --no-verbose to download dataset from https://bmeedu-my.sharepoint.com/:u:/g/personal/gyires-toth_balint_vik_bme_hu/IQB8kDcLEuTqQphHx7pv4Cw5AW7XMJp5MUbwortTASU223A?e=Uu6CTj&download=1&xsdata=MDV8MDJ8fDIyOTc1YmYyMWMzNzQyODFlZWZhMDhkZTM3YmNkMjdifDZhMzU0OGFiNzU3MDQyNzE5MWE4NThkYTAwNjk3MDI5fDB8MHw2MzkwMDk0ODEyNTc5MDU5MTR8VW5rbm93bnxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKRFFTSTZJbFJsWVcxelgwRlVVRk5sY25acFkyVmZVMUJQVEU5R0lpd2lWaUk2SWpBdU1DNHdNREF3SWl3aVVDSTZJbGRwYmpNeUlpd2lRVTRpT2lKUGRHaGxjaUlzSWxkVUlqb3hNWDA5fDF8TDNSbFlXMXpMekU1T2xSM1NIcHViVlpTVlVKUGFGUjFRVTFyWlc1blIyVlhTSEkzYjB0WVNWQkNTamxxTWtKbkxVdFdkMnN4UUhSb2NtVmhaQzUwWVdOMk1pOWphR0Z1Ym1Wc2N5OHhPVHBVZDBoNmJtMVdVbFZDVDJoVWRVRk5hMlZ1WjBkbFYwaHlOMjlMV0VsUVFrbzVhakpDWnkxTFZuZHJNVUIwYUhKbFlXUXVkR0ZqZGpJdmJXVnpjMkZuWlhNdk1UYzJOVE0xTVRNeU5ETTJPQT09fDBiYmVmZWIwYWJmOTRkZTFlZWZhMDhkZTM3YmNkMjdifGRlNDNhNjEyMWZmNzQxOTk4OGJiYzk4ZWMzZjU4MTdk&sdata=SWRDUWQrSVVCZTViZ05ZVEp2dU10ZFhJWG90RTdYZCtxSjBXbEtUclBCND0%3D&ovuser=6a3548ab-7570-4271-91a8-58da00697029%2Cbencefarkas27%40edu.bme.hu to data/anklealign.zip
-2025-12-13 15:45:35 URL:https://bmeedu-my.sharepoint.com/personal/gyires-toth_balint_vik_bme_hu/Documents/Dokumentumok/VITMMA19/2025/project-work/anklealign.zip?ga=1&LOF=1 [473095373/473095373] -> "data/anklealign.zip" [1]
+2025-12-14 08:56:10 URL:https://bmeedu-my.sharepoint.com/personal/gyires-toth_balint_vik_bme_hu/Documents/Dokumentumok/VITMMA19/2025/project-work/anklealign.zip?ga=1&LOF=1 [473095373/473095373] -> "data/anklealign.zip" [1]
 Download completed successfully, unzipping to data
-[run.sh] Starting full pipeline run at 2025-12-13T15:45:38+00:00
-[run.sh] Running data preprocessing at 2025-12-13T15:45:38+00:00
-2025-12-13 15:45:41,162 - INFO - Renaming files in folder: GI9Y8B
-2025-12-13 15:45:41,176 - INFO - Renaming files in folder: FO6K58
-2025-12-13 15:45:41,184 - INFO - Renaming files in folder: ODZF0M
-2025-12-13 15:45:41,200 - INFO - Renaming files in folder: D6AE9F
-2025-12-13 15:45:41,233 - INFO - Renaming files in folder: NX9GA4
-2025-12-13 15:45:41,252 - INFO - Renaming files in folder: sample
-2025-12-13 15:45:41,253 - INFO - Renaming files in folder: ECSGGY
-2025-12-13 15:45:41,372 - INFO - Renaming files in folder: H51B9J
-2025-12-13 15:45:41,422 - INFO - Renaming files in folder: B8V41Y
-2025-12-13 15:45:41,431 - INFO - Renaming files in folder: OJHGS8
-2025-12-13 15:45:41,453 - INFO - Renaming files in folder: C6037J
-2025-12-13 15:45:41,487 - INFO - Renaming files in folder: FGWUFP
-2025-12-13 15:45:41,516 - INFO - Renaming files in folder: NC1O2T
-2025-12-13 15:45:41,516 - INFO - Renaming files in folder: ITWQ3V
-2025-12-13 15:45:41,524 - INFO - Renaming files in folder: GK1XQ4
-2025-12-13 15:45:41,535 - INFO - Renaming files in folder: XV0M8Z
-2025-12-13 15:45:41,541 - INFO - No label file found in folder: GI9Y8B
-2025-12-13 15:45:41,542 - INFO - Label file found: /app/data/anklealign/FO6K58/FO6K58_labels.json
-2025-12-13 15:45:41,546 - INFO - Total entries updated: 32
-2025-12-13 15:45:41,546 - INFO - Label file found: /app/data/anklealign/ODZF0M/project-2-at-2025-10-16-02-08-8ee4fdfa.json
-2025-12-13 15:45:41,548 - INFO - Total entries updated: 20
-2025-12-13 15:45:41,549 - INFO - Label file found: /app/data/anklealign/D6AE9F/D6AE9F.json
-2025-12-13 15:45:41,551 - INFO - Total entries updated: 22
-2025-12-13 15:45:41,551 - INFO - Label file found: /app/data/anklealign/NX9GA4/NX9GA4_ankles_labeled.json
-2025-12-13 15:45:41,555 - INFO - Total entries updated: 20
-2025-12-13 15:45:41,555 - INFO - Label file found: /app/data/anklealign/sample/project-1-at-2025-09-30-21-17-d687dfd4.json
-2025-12-13 15:45:41,556 - INFO - Total entries updated: 2
-2025-12-13 15:45:41,556 - INFO - No label file found in folder: ECSGGY
-2025-12-13 15:45:41,557 - INFO - Label file found: /app/data/anklealign/H51B9J/H51B9J.json
-2025-12-13 15:45:41,559 - INFO - Total entries updated: 23
-2025-12-13 15:45:41,559 - INFO - Label file found: /app/data/anklealign/B8V41Y/b8v41y.json
-2025-12-13 15:45:41,562 - INFO - Total entries updated: 20
-2025-12-13 15:45:41,562 - INFO - Label file found: /app/data/anklealign/OJHGS8/OJHGS8.json
-2025-12-13 15:45:41,564 - INFO - Total entries updated: 20
-2025-12-13 15:45:41,564 - INFO - Label file found: /app/data/anklealign/C6037J/C6037J.json
-2025-12-13 15:45:41,568 - INFO - Total entries updated: 34
-2025-12-13 15:45:41,568 - INFO - Label file found: /app/data/anklealign/FGWUFP/FGWUFP.json
-2025-12-13 15:45:41,571 - INFO - Total entries updated: 20
-2025-12-13 15:45:41,571 - INFO - Label file found: /app/data/anklealign/NC1O2T/hf_labels_export.json
-2025-12-13 15:45:41,573 - INFO - Total entries updated: 20
-2025-12-13 15:45:41,573 - INFO - Label file found: /app/data/anklealign/ITWQ3V/ITWQ3V.json
-2025-12-13 15:45:41,576 - INFO - Total entries updated: 23
-2025-12-13 15:45:41,576 - INFO - Label file found: /app/data/anklealign/GK1XQ4/project-1-at-2025-10-15-23-46-9d203653.json
-2025-12-13 15:45:41,582 - INFO - Total entries updated: 52
-2025-12-13 15:45:41,582 - INFO - Label file found: /app/data/anklealign/XV0M8Z/AnkleAlign_Cimkezes_XV0M8Z.json
-2025-12-13 15:45:41,585 - INFO - Total entries updated: 19
-2025-12-13 15:45:41,590 - INFO - Total matched entries: 264
-2025-12-13 15:45:41,591 - INFO - Total images in consensus: 57
-2025-12-13 15:45:41,591 - INFO - Unique images (appearing exactly once): 49
-2025-12-13 15:45:41,591 - INFO - Duplicate images removed: 8
-2025-12-13 15:45:42,071 - INFO - Total unique consensus images: 49
-2025-12-13 15:45:42,072 - INFO - Total training data: 241
-2025-12-13 15:45:42,072 - INFO - Total testing data: 49
-[run.sh] Running training at 2025-12-13T15:45:42+00:00
+[run.sh] Starting full pipeline run at 2025-12-14T08:56:13+00:00
+[run.sh] Running data preprocessing at 2025-12-14T08:56:13+00:00
+2025-12-14 08:56:18,897 - INFO - Renaming files in folder: GI9Y8B
+2025-12-14 08:56:18,911 - INFO - Renaming files in folder: FO6K58
+2025-12-14 08:56:18,919 - INFO - Renaming files in folder: ODZF0M
+2025-12-14 08:56:18,936 - INFO - Renaming files in folder: D6AE9F
+2025-12-14 08:56:18,970 - INFO - Renaming files in folder: NX9GA4
+2025-12-14 08:56:18,995 - INFO - Renaming files in folder: sample
+2025-12-14 08:56:18,997 - INFO - Renaming files in folder: ECSGGY
+2025-12-14 08:56:19,219 - INFO - Renaming files in folder: H51B9J
+2025-12-14 08:56:19,322 - INFO - Renaming files in folder: B8V41Y
+2025-12-14 08:56:19,335 - INFO - Renaming files in folder: OJHGS8
+2025-12-14 08:56:19,375 - INFO - Renaming files in folder: C6037J
+2025-12-14 08:56:19,436 - INFO - Renaming files in folder: FGWUFP
+2025-12-14 08:56:19,487 - INFO - Renaming files in folder: NC1O2T
+2025-12-14 08:56:19,488 - INFO - Renaming files in folder: ITWQ3V
+2025-12-14 08:56:19,508 - INFO - Renaming files in folder: GK1XQ4
+2025-12-14 08:56:19,531 - INFO - Renaming files in folder: XV0M8Z
+2025-12-14 08:56:19,539 - INFO - No label file found in folder: GI9Y8B
+2025-12-14 08:56:19,540 - INFO - Label file found: /app/data/anklealign/FO6K58/FO6K58_labels.json
+2025-12-14 08:56:19,544 - INFO - Total entries updated: 32
+2025-12-14 08:56:19,545 - INFO - Label file found: /app/data/anklealign/ODZF0M/project-2-at-2025-10-16-02-08-8ee4fdfa.json
+2025-12-14 08:56:19,548 - INFO - Total entries updated: 20
+2025-12-14 08:56:19,548 - INFO - Label file found: /app/data/anklealign/D6AE9F/D6AE9F.json
+2025-12-14 08:56:19,551 - INFO - Total entries updated: 22
+2025-12-14 08:56:19,551 - INFO - Label file found: /app/data/anklealign/NX9GA4/NX9GA4_ankles_labeled.json
+2025-12-14 08:56:19,554 - INFO - Total entries updated: 20
+2025-12-14 08:56:19,554 - INFO - Label file found: /app/data/anklealign/sample/project-1-at-2025-09-30-21-17-d687dfd4.json
+2025-12-14 08:56:19,555 - INFO - Total entries updated: 2
+2025-12-14 08:56:19,556 - INFO - No label file found in folder: ECSGGY
+2025-12-14 08:56:19,557 - INFO - Label file found: /app/data/anklealign/H51B9J/H51B9J.json
+2025-12-14 08:56:19,561 - INFO - Total entries updated: 23
+2025-12-14 08:56:19,561 - INFO - Label file found: /app/data/anklealign/B8V41Y/b8v41y.json
+2025-12-14 08:56:19,565 - INFO - Total entries updated: 20
+2025-12-14 08:56:19,565 - INFO - Label file found: /app/data/anklealign/OJHGS8/OJHGS8.json
+2025-12-14 08:56:19,569 - INFO - Total entries updated: 20
+2025-12-14 08:56:19,569 - INFO - Label file found: /app/data/anklealign/C6037J/C6037J.json
+2025-12-14 08:56:19,573 - INFO - Total entries updated: 34
+2025-12-14 08:56:19,574 - INFO - Label file found: /app/data/anklealign/FGWUFP/FGWUFP.json
+2025-12-14 08:56:19,576 - INFO - Total entries updated: 20
+2025-12-14 08:56:19,577 - INFO - Label file found: /app/data/anklealign/NC1O2T/hf_labels_export.json
+2025-12-14 08:56:19,580 - INFO - Total entries updated: 20
+2025-12-14 08:56:19,580 - INFO - Label file found: /app/data/anklealign/ITWQ3V/ITWQ3V.json
+2025-12-14 08:56:19,583 - INFO - Total entries updated: 23
+2025-12-14 08:56:19,583 - INFO - Label file found: /app/data/anklealign/GK1XQ4/project-1-at-2025-10-15-23-46-9d203653.json
+2025-12-14 08:56:19,590 - INFO - Total entries updated: 52
+2025-12-14 08:56:19,590 - INFO - Label file found: /app/data/anklealign/XV0M8Z/AnkleAlign_Cimkezes_XV0M8Z.json
+2025-12-14 08:56:19,593 - INFO - Total entries updated: 19
+2025-12-14 08:56:19,604 - INFO - Total matched entries: 264
+2025-12-14 08:56:19,604 - INFO - Total images in consensus: 57
+2025-12-14 08:56:19,604 - INFO - Unique images (appearing exactly once): 49
+2025-12-14 08:56:19,604 - INFO - Duplicate images removed: 8
+2025-12-14 08:56:20,189 - INFO - Total unique consensus images: 49
+2025-12-14 08:56:20,190 - INFO - Total training data: 241
+2025-12-14 08:56:20,190 - INFO - Total testing data: 49
+[run.sh] Running training at 2025-12-14T08:56:21+00:00
 /opt/conda/lib/python3.11/site-packages/torch/cuda/__init__.py:182: UserWarning: CUDA initialization: Unexpected error from cudaGetDeviceCount(). Did you run some cuda functions before calling NumCudaDevices() that might have already set an error? Error 500: named symbol not found (Triggered internally at /pytorch/c10/cuda/CUDAFunctions.cpp:109.)
   return torch._C._cuda_getDeviceCount() > 0
-2025-12-13 15:45:46,020 - INFO - CUDA not available
-2025-12-13 15:45:46,020 - INFO - Device set to: cpu
-2025-12-13 15:45:52,601 - INFO - Label mapping: {np.str_('1_Pronacio'): 0, np.str_('2_Neutralis'): 1, np.str_('3_Szupinacio'): 2}
-2025-12-13 15:45:52,602 - INFO - Train loader size: 241
-Training model:   0%|          | 0/50 [00:00<?, ?it/s]==========================================================================================
+2025-12-14 08:56:24,981 - INFO - CUDA not available
+2025-12-14 08:56:24,981 - INFO - Device set to: cpu
+2025-12-14 08:56:31,513 - INFO - Label mapping: {np.str_('1_Pronacio'): 0, np.str_('2_Neutralis'): 1, np.str_('3_Szupinacio'): 2}
+2025-12-14 08:56:31,513 - INFO - Train loader size: 241
+==========================================================================================
 Layer (type:depth-idx)                   Output Shape              Param #
 ==========================================================================================
-BaseLineNetWork                          [32, 3]                   --
-├─Sequential: 1-1                        [32, 32, 1, 1]            --
-│    └─Conv2d: 2-1                       [32, 8, 112, 112]         80
-│    └─ReLU: 2-2                         [32, 8, 112, 112]         --
-│    └─Conv2d: 2-3                       [32, 16, 56, 56]          1,168
-│    └─ReLU: 2-4                         [32, 16, 56, 56]          --
-│    └─Conv2d: 2-5                       [32, 32, 28, 28]          4,640
-│    └─ReLU: 2-6                         [32, 32, 28, 28]          --
-│    └─AdaptiveAvgPool2d: 2-7            [32, 32, 1, 1]            --
-├─Sequential: 1-2                        [32, 3]                   --
-│    └─Flatten: 2-8                      [32, 32]                  --
-│    └─Linear: 2-9                       [32, 128]                 4,224
-│    └─ReLU: 2-10                        [32, 128]                 --
-│    └─Linear: 2-11                      [32, 64]                  8,256
-│    └─ReLU: 2-12                        [32, 64]                  --
-│    └─Linear: 2-13                      [32, 3]                   195
+BaseLineNetWork                          [16, 3]                   --
+├─Sequential: 1-1                        [16, 32, 1, 1]            --
+│    └─Conv2d: 2-1                       [16, 8, 112, 112]         80
+│    └─ReLU: 2-2                         [16, 8, 112, 112]         --
+│    └─Conv2d: 2-3                       [16, 16, 56, 56]          1,168
+│    └─ReLU: 2-4                         [16, 16, 56, 56]          --
+│    └─Conv2d: 2-5                       [16, 32, 28, 28]          4,640
+│    └─ReLU: 2-6                         [16, 32, 28, 28]          --
+│    └─AdaptiveAvgPool2d: 2-7            [16, 32, 1, 1]            --
+├─Sequential: 1-2                        [16, 3]                   --
+│    └─Flatten: 2-8                      [16, 32]                  --
+│    └─Linear: 2-9                       [16, 64]                  2,112
+│    └─ReLU: 2-10                        [16, 64]                  --
+│    └─Linear: 2-11                      [16, 3]                   195
 ==========================================================================================
-Total params: 18,563
-Trainable params: 18,563
+Total params: 8,195
+Trainable params: 8,195
 Non-trainable params: 0
-Total mult-adds (Units.MEGABYTES): 266.14
+Total mult-adds (Units.MEGABYTES): 132.90
 ==========================================================================================
-Input size (MB): 6.42
-Forward/backward pass size (MB): 45.01
-Params size (MB): 0.07
-Estimated Total Size (MB): 51.50
+Input size (MB): 3.21
+Forward/backward pass size (MB): 22.49
+Params size (MB): 0.03
+Estimated Total Size (MB): 25.73
 ==========================================================================================
-2025-12-13 15:45:53,155 - INFO - Epoch 1/50, Train Loss: 1.0658
-Training model:   2%|▏         | 1/50 [00:00<00:25,  1.91it/s]2025-12-13 15:45:53,671 - INFO - Epoch 2/50, Train Loss: 1.0092
-Training model:   4%|▍         | 2/50 [00:01<00:24,  1.93it/s]2025-12-13 15:45:54,183 - INFO - Epoch 3/50, Train Loss: 0.9803
-Training model:   6%|▌         | 3/50 [00:01<00:24,  1.94it/s]2025-12-13 15:45:54,691 - INFO - Epoch 4/50, Train Loss: 1.0133
-Training model:   8%|▊         | 4/50 [00:02<00:23,  1.95it/s]2025-12-13 15:45:55,203 - INFO - Epoch 5/50, Train Loss: 1.0107
-Training model:  10%|█         | 5/50 [00:02<00:23,  1.95it/s]2025-12-13 15:45:55,711 - INFO - Epoch 6/50, Train Loss: 0.9865
-Training model:  12%|█▏        | 6/50 [00:03<00:22,  1.96it/s]2025-12-13 15:45:56,236 - INFO - Epoch 7/50, Train Loss: 0.9920
-Training model:  14%|█▍        | 7/50 [00:03<00:22,  1.94it/s]2025-12-13 15:45:56,777 - INFO - Epoch 8/50, Train Loss: 0.9866
-Training model:  16%|█▌        | 8/50 [00:04<00:21,  1.91it/s]2025-12-13 15:45:57,284 - INFO - Epoch 9/50, Train Loss: 0.9967
-Training model:  18%|█▊        | 9/50 [00:04<00:21,  1.93it/s]Training model:  20%|██        | 10/50 [00:05<00:20,  1.94it/s]2025-12-13 15:45:57,792 - INFO - Epoch 10/50, Train Loss: 1.0015
-Training model:  22%|██▏       | 11/50 [00:05<00:20,  1.93it/s]2025-12-13 15:45:58,319 - INFO - Epoch 11/50, Train Loss: 1.0389
-2025-12-13 15:45:58,827 - INFO - Epoch 12/50, Train Loss: 1.0163
-Training model:  24%|██▍       | 12/50 [00:06<00:19,  1.94it/s]Training model:  26%|██▌       | 13/50 [00:06<00:19,  1.95it/s]2025-12-13 15:45:59,337 - INFO - Epoch 13/50, Train Loss: 0.9987
-2025-12-13 15:45:59,849 - INFO - Epoch 14/50, Train Loss: 0.9887
-Training model:  28%|██▊       | 14/50 [00:07<00:18,  1.95it/s]2025-12-13 15:46:00,397 - INFO - Epoch 15/50, Train Loss: 0.9845
-Training model:  30%|███       | 15/50 [00:07<00:18,  1.91it/s]2025-12-13 15:46:00,916 - INFO - Epoch 16/50, Train Loss: 0.9870
-Training model:  32%|███▏      | 16/50 [00:08<00:17,  1.91it/s]2025-12-13 15:46:01,430 - INFO - Epoch 17/50, Train Loss: 0.9942
-Training model:  34%|███▍      | 17/50 [00:08<00:17,  1.92it/s]2025-12-13 15:46:01,947 - INFO - Epoch 18/50, Train Loss: 0.9824
-Training model:  36%|███▌      | 18/50 [00:09<00:16,  1.93it/s]2025-12-13 15:46:02,468 - INFO - Epoch 19/50, Train Loss: 0.9922
-Training model:  38%|███▊      | 19/50 [00:09<00:16,  1.92it/s]2025-12-13 15:46:02,978 - INFO - Epoch 20/50, Train Loss: 0.9900
-Training model:  40%|████      | 20/50 [00:10<00:15,  1.94it/s]Training model:  42%|████▏     | 21/50 [00:10<00:14,  1.94it/s]2025-12-13 15:46:03,489 - INFO - Epoch 21/50, Train Loss: 0.9823
-2025-12-13 15:46:03,999 - INFO - Epoch 22/50, Train Loss: 0.9813
-Training model:  44%|████▍     | 22/50 [00:11<00:14,  1.95it/s]2025-12-13 15:46:04,529 - INFO - Epoch 23/50, Train Loss: 0.9770
-Training model:  46%|████▌     | 23/50 [00:11<00:13,  1.93it/s]2025-12-13 15:46:05,034 - INFO - Epoch 24/50, Train Loss: 0.9988
-Training model:  48%|████▊     | 24/50 [00:12<00:13,  1.94it/s]2025-12-13 15:46:05,540 - INFO - Epoch 25/50, Train Loss: 0.9726
-Training model:  50%|█████     | 25/50 [00:12<00:12,  1.95it/s]2025-12-13 15:46:06,044 - INFO - Epoch 26/50, Train Loss: 0.9917
-Training model:  52%|█████▏    | 26/50 [00:13<00:12,  1.96it/s]2025-12-13 15:46:06,561 - INFO - Epoch 27/50, Train Loss: 0.9852
-Training model:  54%|█████▍    | 27/50 [00:13<00:11,  1.95it/s]2025-12-13 15:46:07,114 - INFO - Epoch 28/50, Train Loss: 0.9778
-Training model:  56%|█████▌    | 28/50 [00:14<00:11,  1.91it/s]2025-12-13 15:46:07,664 - INFO - Epoch 29/50, Train Loss: 0.9631
-Training model:  58%|█████▊    | 29/50 [00:15<00:11,  1.88it/s]2025-12-13 15:46:08,178 - INFO - Epoch 30/50, Train Loss: 0.9625
-Training model:  60%|██████    | 30/50 [00:15<00:10,  1.90it/s]2025-12-13 15:46:08,698 - INFO - Epoch 31/50, Train Loss: 0.9851
-Training model:  62%|██████▏   | 31/50 [00:16<00:09,  1.91it/s]2025-12-13 15:46:09,244 - INFO - Epoch 32/50, Train Loss: 0.9805
-Training model:  64%|██████▍   | 32/50 [00:16<00:09,  1.88it/s]2025-12-13 15:46:09,828 - INFO - Epoch 33/50, Train Loss: 0.9767
-Training model:  66%|██████▌   | 33/50 [00:17<00:09,  1.83it/s]2025-12-13 15:46:10,361 - INFO - Epoch 34/50, Train Loss: 0.9686
-Training model:  68%|██████▊   | 34/50 [00:17<00:08,  1.84it/s]2025-12-13 15:46:10,897 - INFO - Epoch 35/50, Train Loss: 0.9655
-Training model:  70%|███████   | 35/50 [00:18<00:08,  1.85it/s]2025-12-13 15:46:11,414 - INFO - Epoch 36/50, Train Loss: 0.9790
-Training model:  72%|███████▏  | 36/50 [00:18<00:07,  1.87it/s]2025-12-13 15:46:11,919 - INFO - Epoch 37/50, Train Loss: 0.9694
-Training model:  74%|███████▍  | 37/50 [00:19<00:06,  1.90it/s]2025-12-13 15:46:12,440 - INFO - Epoch 38/50, Train Loss: 0.9625
-Training model:  76%|███████▌  | 38/50 [00:19<00:06,  1.91it/s]2025-12-13 15:46:12,955 - INFO - Epoch 39/50, Train Loss: 0.9704
-Training model:  78%|███████▊  | 39/50 [00:20<00:05,  1.92it/s]2025-12-13 15:46:13,462 - INFO - Epoch 40/50, Train Loss: 0.9634
-Training model:  80%|████████  | 40/50 [00:20<00:05,  1.93it/s]2025-12-13 15:46:13,989 - INFO - Epoch 41/50, Train Loss: 0.9632
-Training model:  82%|████████▏ | 41/50 [00:21<00:04,  1.92it/s]2025-12-13 15:46:14,536 - INFO - Epoch 42/50, Train Loss: 0.9492
-Training model:  84%|████████▍ | 42/50 [00:21<00:04,  1.89it/s]2025-12-13 15:46:15,092 - INFO - Epoch 43/50, Train Loss: 0.9637
-Training model:  86%|████████▌ | 43/50 [00:22<00:03,  1.86it/s]2025-12-13 15:46:15,611 - INFO - Epoch 44/50, Train Loss: 0.9537
-Training model:  88%|████████▊ | 44/50 [00:22<00:03,  1.88it/s]2025-12-13 15:46:16,126 - INFO - Epoch 45/50, Train Loss: 0.9836
-Training model:  90%|█████████ | 45/50 [00:23<00:02,  1.90it/s]2025-12-13 15:46:16,642 - INFO - Epoch 46/50, Train Loss: 0.9827
-Training model:  92%|█████████▏| 46/50 [00:24<00:02,  1.91it/s]Training model:  94%|█████████▍| 47/50 [00:24<00:01,  1.80it/s]2025-12-13 15:46:17,274 - INFO - Epoch 47/50, Train Loss: 0.9529
-2025-12-13 15:46:17,817 - INFO - Epoch 48/50, Train Loss: 0.9552
-Training model:  96%|█████████▌| 48/50 [00:25<00:01,  1.81it/s]2025-12-13 15:46:18,380 - INFO - Epoch 49/50, Train Loss: 0.9654
-Training model:  98%|█████████▊| 49/50 [00:25<00:00,  1.80it/s]2025-12-13 15:46:18,895 - INFO - Epoch 50/50, Train Loss: 0.9618
-Training model: 100%|██████████| 50/50 [00:26<00:00,  1.84it/s]Training model: 100%|██████████| 50/50 [00:26<00:00,  1.90it/s]
-2025-12-13 15:46:18,895 - INFO - [1.0657865554094315, 1.0092455968260765, 0.9803328141570091, 1.01328956335783, 1.0106681436300278, 0.9864838272333145, 0.9919840022921562, 0.9865653291344643, 0.9967193752527237, 1.0014672726392746, 1.0389346033334732, 1.0162629708647728, 0.9987150877714157, 0.988702654838562, 0.984466128051281, 0.9870192781090736, 0.9942339286208153, 0.9824327155947685, 0.9921939820051193, 0.9899552762508392, 0.9822661280632019, 0.9812854900956154, 0.976952075958252, 0.9988226294517517, 0.9726353585720062, 0.9916791617870331, 0.9851508438587189, 0.9778086319565773, 0.9630626365542412, 0.9624580964446068, 0.9850801527500153, 0.9804721474647522, 0.9766909405589104, 0.9685864821076393, 0.9654950201511383, 0.9790358766913414, 0.9693969041109085, 0.9624719545245171, 0.9703694880008698, 0.9634381011128426, 0.9631796851754189, 0.9492133036255836, 0.9636684581637383, 0.9536859765648842, 0.9835870414972305, 0.9827027171850204, 0.9528601691126823, 0.9551916718482971, 0.9653505384922028, 0.9617997780442238]
-2025-12-13 15:46:18,898 - INFO - Baseline model weights saved to /app/src/models/baseline_weights.pth
-2025-12-13 15:46:25,456 - INFO - Label mapping: {np.str_('1_Pronacio'): 0, np.str_('2_Neutralis'): 1, np.str_('3_Szupinacio'): 2}
-2025-12-13 15:46:25,469 - INFO - Train loader size: 216
-2025-12-13 15:46:25,469 - INFO - Validation loader size: 25
+2025-12-14 08:56:31,565 - INFO - Starting training with hyperparameters: num_epochs=50, early_stopping_patience=5, learning_rate=0.005
+Training model:   0%|          | 0/50 [00:00<?, ?it/s]2025-12-14 08:56:32,095 - INFO - Epoch 1/50, Train Loss: 1.0268
+Training model:   2%|▏         | 1/50 [00:00<00:25,  1.89it/s]2025-12-14 08:56:32,587 - INFO - Epoch 2/50, Train Loss: 1.0021
+Training model:   4%|▍         | 2/50 [00:01<00:24,  1.97it/s]2025-12-14 08:56:33,075 - INFO - Epoch 3/50, Train Loss: 0.9936
+Training model:   6%|▌         | 3/50 [00:01<00:23,  2.01it/s]2025-12-14 08:56:33,569 - INFO - Epoch 4/50, Train Loss: 1.0331
+Training model:   8%|▊         | 4/50 [00:02<00:22,  2.01it/s]2025-12-14 08:56:34,075 - INFO - Epoch 5/50, Train Loss: 1.0556
+Training model:  10%|█         | 5/50 [00:02<00:22,  2.00it/s]2025-12-14 08:56:34,571 - INFO - Epoch 6/50, Train Loss: 0.9922
+Training model:  12%|█▏        | 6/50 [00:03<00:21,  2.00it/s]2025-12-14 08:56:35,070 - INFO - Epoch 7/50, Train Loss: 0.9951
+Training model:  14%|█▍        | 7/50 [00:03<00:21,  2.00it/s]2025-12-14 08:56:35,712 - INFO - Epoch 8/50, Train Loss: 0.9781
+Training model:  16%|█▌        | 8/50 [00:04<00:22,  1.84it/s]2025-12-14 08:56:36,252 - INFO - Epoch 9/50, Train Loss: 0.9709
+Training model:  18%|█▊        | 9/50 [00:04<00:22,  1.84it/s]2025-12-14 08:56:36,956 - INFO - Epoch 10/50, Train Loss: 1.0379
+Training model:  20%|██        | 10/50 [00:05<00:23,  1.69it/s]2025-12-14 08:56:37,615 - INFO - Epoch 11/50, Train Loss: 0.9531
+Training model:  22%|██▏       | 11/50 [00:06<00:23,  1.63it/s]2025-12-14 08:56:38,166 - INFO - Epoch 12/50, Train Loss: 0.9929
+Training model:  24%|██▍       | 12/50 [00:06<00:22,  1.68it/s]2025-12-14 08:56:38,666 - INFO - Epoch 13/50, Train Loss: 0.9888
+Training model:  26%|██▌       | 13/50 [00:07<00:20,  1.77it/s]2025-12-14 08:56:39,286 - INFO - Epoch 14/50, Train Loss: 0.9909
+Training model:  28%|██▊       | 14/50 [00:07<00:20,  1.72it/s]Training model:  30%|███       | 15/50 [00:08<00:20,  1.71it/s]2025-12-14 08:56:39,874 - INFO - Epoch 15/50, Train Loss: 0.9790
+2025-12-14 08:56:40,420 - INFO - Epoch 16/50, Train Loss: 0.9654
+Training model:  32%|███▏      | 16/50 [00:08<00:19,  1.75it/s]2025-12-14 08:56:40,957 - INFO - Epoch 17/50, Train Loss: 0.9513
+Training model:  34%|███▍      | 17/50 [00:09<00:18,  1.78it/s]2025-12-14 08:56:41,800 - INFO - Epoch 18/50, Train Loss: 0.9696
+Training model:  36%|███▌      | 18/50 [00:10<00:20,  1.55it/s]2025-12-14 08:56:42,340 - INFO - Epoch 19/50, Train Loss: 0.9746
+Training model:  38%|███▊      | 19/50 [00:10<00:19,  1.63it/s]2025-12-14 08:56:42,865 - INFO - Epoch 20/50, Train Loss: 1.0460
+Training model:  40%|████      | 20/50 [00:11<00:17,  1.70it/s]2025-12-14 08:56:43,399 - INFO - Epoch 21/50, Train Loss: 0.9917
+Training model:  42%|████▏     | 21/50 [00:11<00:16,  1.75it/s]2025-12-14 08:56:43,922 - INFO - Epoch 22/50, Train Loss: 1.0006
+Training model:  44%|████▍     | 22/50 [00:12<00:15,  1.80it/s]2025-12-14 08:56:44,468 - INFO - Epoch 23/50, Train Loss: 0.9925
+Training model:  46%|████▌     | 23/50 [00:12<00:14,  1.81it/s]2025-12-14 08:56:44,957 - INFO - Epoch 24/50, Train Loss: 0.9875
+Training model:  48%|████▊     | 24/50 [00:13<00:13,  1.87it/s]2025-12-14 08:56:45,465 - INFO - Epoch 25/50, Train Loss: 0.9703
+Training model:  50%|█████     | 25/50 [00:13<00:13,  1.90it/s]2025-12-14 08:56:46,351 - INFO - Epoch 26/50, Train Loss: 1.0137
+Training model:  52%|█████▏    | 26/50 [00:14<00:15,  1.58it/s]2025-12-14 08:56:47,002 - INFO - Epoch 27/50, Train Loss: 0.9701
+Training model:  54%|█████▍    | 27/50 [00:15<00:14,  1.56it/s]2025-12-14 08:56:47,545 - INFO - Epoch 28/50, Train Loss: 0.9909
+Training model:  56%|█████▌    | 28/50 [00:15<00:13,  1.64it/s]2025-12-14 08:56:48,102 - INFO - Epoch 29/50, Train Loss: 0.9643
+Training model:  58%|█████▊    | 29/50 [00:16<00:12,  1.68it/s]2025-12-14 08:56:48,625 - INFO - Epoch 30/50, Train Loss: 0.9719
+Training model:  60%|██████    | 30/50 [00:17<00:11,  1.74it/s]2025-12-14 08:56:49,154 - INFO - Epoch 31/50, Train Loss: 0.9614
+Training model:  62%|██████▏   | 31/50 [00:17<00:10,  1.79it/s]2025-12-14 08:56:49,663 - INFO - Epoch 32/50, Train Loss: 0.9582
+Training model:  64%|██████▍   | 32/50 [00:18<00:09,  1.84it/s]2025-12-14 08:56:50,372 - INFO - Epoch 33/50, Train Loss: 0.9508
+Training model:  66%|██████▌   | 33/50 [00:18<00:10,  1.68it/s]2025-12-14 08:56:50,988 - INFO - Epoch 34/50, Train Loss: 1.0313
+Training model:  68%|██████▊   | 34/50 [00:19<00:09,  1.67it/s]2025-12-14 08:56:51,686 - INFO - Epoch 35/50, Train Loss: 1.0198
+Training model:  70%|███████   | 35/50 [00:20<00:09,  1.59it/s]2025-12-14 08:56:52,245 - INFO - Epoch 36/50, Train Loss: 0.9721
+Training model:  72%|███████▏  | 36/50 [00:20<00:08,  1.64it/s]2025-12-14 08:56:52,742 - INFO - Epoch 37/50, Train Loss: 0.9655
+Training model:  74%|███████▍  | 37/50 [00:21<00:07,  1.74it/s]2025-12-14 08:56:53,247 - INFO - Epoch 38/50, Train Loss: 0.9625
+Training model:  76%|███████▌  | 38/50 [00:21<00:06,  1.81it/s]2025-12-14 08:56:53,867 - INFO - Epoch 39/50, Train Loss: 0.9469
+Training model:  78%|███████▊  | 39/50 [00:22<00:06,  1.74it/s]2025-12-14 08:56:54,529 - INFO - Epoch 40/50, Train Loss: 0.9568
+Training model:  80%|████████  | 40/50 [00:22<00:06,  1.67it/s]2025-12-14 08:56:55,027 - INFO - Epoch 41/50, Train Loss: 1.0195
+Training model:  82%|████████▏ | 41/50 [00:23<00:05,  1.76it/s]2025-12-14 08:56:55,549 - INFO - Epoch 42/50, Train Loss: 0.9516
+Training model:  84%|████████▍ | 42/50 [00:23<00:04,  1.80it/s]2025-12-14 08:56:56,079 - INFO - Epoch 43/50, Train Loss: 0.9571
+Training model:  86%|████████▌ | 43/50 [00:24<00:03,  1.83it/s]Training model:  88%|████████▊ | 44/50 [00:25<00:03,  1.82it/s]2025-12-14 08:56:56,633 - INFO - Epoch 44/50, Train Loss: 0.9542
+Training model:  90%|█████████ | 45/50 [00:25<00:02,  1.86it/s]2025-12-14 08:56:57,145 - INFO - Epoch 45/50, Train Loss: 0.9508
+2025-12-14 08:56:57,651 - INFO - Epoch 46/50, Train Loss: 1.0297
+Training model:  92%|█████████▏| 46/50 [00:26<00:02,  1.89it/s]2025-12-14 08:56:58,169 - INFO - Epoch 47/50, Train Loss: 0.9493
+Training model:  94%|█████████▍| 47/50 [00:26<00:01,  1.90it/s]2025-12-14 08:56:58,719 - INFO - Epoch 48/50, Train Loss: 0.9710
+Training model:  96%|█████████▌| 48/50 [00:27<00:01,  1.88it/s]Training model:  98%|█████████▊| 49/50 [00:27<00:00,  1.92it/s]2025-12-14 08:56:59,208 - INFO - Epoch 49/50, Train Loss: 0.9759
+2025-12-14 08:56:59,757 - INFO - Epoch 50/50, Train Loss: 0.9543
+Training model: 100%|██████████| 50/50 [00:28<00:00,  1.89it/s]Training model: 100%|██████████| 50/50 [00:28<00:00,  1.77it/s]
+2025-12-14 08:56:59,757 - INFO - [1.0268457531929016, 1.0020825266838074, 0.9936413988471031, 1.0331383496522903, 1.05563572794199, 0.9922463521361351, 0.9951244331896305, 0.9780806116759777, 0.9708971306681633, 1.037926658987999, 0.9531295225024223, 0.9929304607212543, 0.9887714348733425, 0.9908619336783886, 0.9789507575333118, 0.9653685465455055, 0.951259046792984, 0.9696096666157246, 0.9746372736990452, 1.0459548309445381, 0.9916978254914284, 1.0006356872618198, 0.9925386980175972, 0.9875078238546848, 0.9703427255153656, 1.0137465260922909, 0.9701486267149448, 0.9908817186951637, 0.9642560742795467, 0.9718853086233139, 0.9613917991518974, 0.9582030475139618, 0.9508164562284946, 1.0313018783926964, 1.0197802484035492, 0.9721067510545254, 0.965452566742897, 0.9625498093664646, 0.9468538723886013, 0.9568153582513332, 1.019498035311699, 0.9515503607690334, 0.9571026191115379, 0.9542229399085045, 0.9507654942572117, 1.029663123190403, 0.9492635317146778, 0.9710263423621655, 0.9759004227817059, 0.9543208181858063]
+2025-12-14 08:56:59,761 - INFO - Baseline model weights saved to /app/src/models/baseline_weights.pth
+2025-12-14 08:57:06,465 - INFO - Label mapping: {np.str_('1_Pronacio'): 0, np.str_('2_Neutralis'): 1, np.str_('3_Szupinacio'): 2}
+2025-12-14 08:57:06,480 - INFO - Train loader size: 192
+2025-12-14 08:57:06,481 - INFO - Validation loader size: 49
 ==========================================================================================
 Layer (type:depth-idx)                   Output Shape              Param #
 ==========================================================================================
-BestNetWork                              [32, 3]                   --
-├─Sequential: 1-1                        [32, 64, 1, 1]            --
-│    └─Conv2d: 2-1                       [32, 8, 224, 224]         80
-│    └─BatchNorm2d: 2-2                  [32, 8, 224, 224]         16
-│    └─ReLU: 2-3                         [32, 8, 224, 224]         --
-│    └─MaxPool2d: 2-4                    [32, 8, 112, 112]         --
-│    └─Conv2d: 2-5                       [32, 16, 112, 112]        1,168
-│    └─BatchNorm2d: 2-6                  [32, 16, 112, 112]        32
-│    └─ReLU: 2-7                         [32, 16, 112, 112]        --
-│    └─MaxPool2d: 2-8                    [32, 16, 56, 56]          --
-│    └─Conv2d: 2-9                       [32, 32, 56, 56]          4,640
-│    └─BatchNorm2d: 2-10                 [32, 32, 56, 56]          64
-│    └─ReLU: 2-11                        [32, 32, 56, 56]          --
-│    └─MaxPool2d: 2-12                   [32, 32, 28, 28]          --
-│    └─Conv2d: 2-13                      [32, 64, 28, 28]          18,496
-│    └─BatchNorm2d: 2-14                 [32, 64, 28, 28]          128
-│    └─ReLU: 2-15                        [32, 64, 28, 28]          --
-│    └─MaxPool2d: 2-16                   [32, 64, 14, 14]          --
-│    └─AdaptiveAvgPool2d: 2-17           [32, 64, 1, 1]            --
-├─Sequential: 1-2                        [32, 3]                   --
-│    └─Flatten: 2-18                     [32, 64]                  --
-│    └─Linear: 2-19                      [32, 128]                 8,320
-│    └─ReLU: 2-20                        [32, 128]                 --
-│    └─Dropout: 2-21                     [32, 128]                 --
-│    └─Linear: 2-22                      [32, 3]                   387
+BestNetWork                              [16, 3]                   --
+├─Sequential: 1-1                        [16, 64, 1, 1]            --
+│    └─Conv2d: 2-1                       [16, 8, 224, 224]         80
+│    └─BatchNorm2d: 2-2                  [16, 8, 224, 224]         16
+│    └─ReLU: 2-3                         [16, 8, 224, 224]         --
+│    └─MaxPool2d: 2-4                    [16, 8, 112, 112]         --
+│    └─Conv2d: 2-5                       [16, 16, 112, 112]        1,168
+│    └─BatchNorm2d: 2-6                  [16, 16, 112, 112]        32
+│    └─ReLU: 2-7                         [16, 16, 112, 112]        --
+│    └─MaxPool2d: 2-8                    [16, 16, 56, 56]          --
+│    └─Conv2d: 2-9                       [16, 32, 56, 56]          4,640
+│    └─BatchNorm2d: 2-10                 [16, 32, 56, 56]          64
+│    └─ReLU: 2-11                        [16, 32, 56, 56]          --
+│    └─MaxPool2d: 2-12                   [16, 32, 28, 28]          --
+│    └─Conv2d: 2-13                      [16, 64, 28, 28]          18,496
+│    └─BatchNorm2d: 2-14                 [16, 64, 28, 28]          128
+│    └─ReLU: 2-15                        [16, 64, 28, 28]          --
+│    └─MaxPool2d: 2-16                   [16, 64, 14, 14]          --
+│    └─AdaptiveAvgPool2d: 2-17           [16, 64, 1, 1]            --
+├─Sequential: 1-2                        [16, 3]                   --
+│    └─Flatten: 2-18                     [16, 64]                  --
+│    └─Linear: 2-19                      [16, 128]                 8,320
+│    └─ReLU: 2-20                        [16, 128]                 --
+│    └─Dropout: 2-21                     [16, 128]                 --
+│    └─Linear: 2-22                      [16, 3]                   387
 ==========================================================================================
 Total params: 33,331
 Trainable params: 33,331
 Non-trainable params: 0
-Total mult-adds (Units.GIGABYTES): 1.53
+Total mult-adds (Units.MEGABYTES): 763.62
 ==========================================================================================
-Input size (MB): 6.42
-Forward/backward pass size (MB): 385.39
+Input size (MB): 3.21
+Forward/backward pass size (MB): 192.69
 Params size (MB): 0.13
-Estimated Total Size (MB): 391.94
+Estimated Total Size (MB): 196.04
 ==========================================================================================
-Training model:   0%|          | 0/50 [00:00<?, ?it/s]2025-12-13 15:46:27,941 - INFO - Epoch 1/50, Train Loss: 1.1604, Val Loss: 1.0358, Val Acc: 0.4000
-Training model:   2%|▏         | 1/50 [00:02<01:54,  2.33s/it]2025-12-13 15:46:30,221 - INFO - Epoch 2/50, Train Loss: 1.0175, Val Loss: 1.0516, Val Acc: 0.4400
-2025-12-13 15:46:30,221 - INFO - EarlyStopping counter: 1 out of 5
-Training model:   4%|▍         | 2/50 [00:04<01:50,  2.30s/it]2025-12-13 15:46:32,548 - INFO - Epoch 3/50, Train Loss: 0.9675, Val Loss: 1.0532, Val Acc: 0.4400
-2025-12-13 15:46:32,548 - INFO - EarlyStopping counter: 2 out of 5
-Training model:   6%|▌         | 3/50 [00:06<01:48,  2.31s/it]2025-12-13 15:46:34,830 - INFO - Epoch 4/50, Train Loss: 1.0000, Val Loss: 1.0266, Val Acc: 0.4400
-Training model:   8%|▊         | 4/50 [00:09<01:45,  2.30s/it]2025-12-13 15:46:37,278 - INFO - Epoch 5/50, Train Loss: 1.0003, Val Loss: 1.0125, Val Acc: 0.4400
-Training model:  10%|█         | 5/50 [00:11<01:45,  2.35s/it]2025-12-13 15:46:39,601 - INFO - Epoch 6/50, Train Loss: 0.9780, Val Loss: 1.0241, Val Acc: 0.4000
-2025-12-13 15:46:39,601 - INFO - EarlyStopping counter: 1 out of 5
-Training model:  12%|█▏        | 6/50 [00:13<01:43,  2.34s/it]2025-12-13 15:46:42,066 - INFO - Epoch 7/50, Train Loss: 0.9448, Val Loss: 1.0116, Val Acc: 0.4400
-2025-12-13 15:46:42,066 - INFO - EarlyStopping counter: 2 out of 5
-Training model:  14%|█▍        | 7/50 [00:16<01:42,  2.38s/it]2025-12-13 15:46:44,388 - INFO - Epoch 8/50, Train Loss: 0.9429, Val Loss: 0.9914, Val Acc: 0.4000
-Training model:  16%|█▌        | 8/50 [00:18<01:39,  2.36s/it]2025-12-13 15:46:46,689 - INFO - Epoch 9/50, Train Loss: 0.9353, Val Loss: 0.9903, Val Acc: 0.4400
-Training model:  18%|█▊        | 9/50 [00:21<01:36,  2.34s/it]2025-12-13 15:46:49,164 - INFO - Epoch 10/50, Train Loss: 0.9620, Val Loss: 1.0242, Val Acc: 0.4000
-2025-12-13 15:46:49,164 - INFO - EarlyStopping counter: 1 out of 5
-Training model:  20%|██        | 10/50 [00:23<01:35,  2.38s/it]2025-12-13 15:46:51,468 - INFO - Epoch 11/50, Train Loss: 0.9320, Val Loss: 1.0165, Val Acc: 0.4400
-2025-12-13 15:46:51,468 - INFO - EarlyStopping counter: 2 out of 5
-Training model:  22%|██▏       | 11/50 [00:25<01:32,  2.36s/it]2025-12-13 15:46:53,780 - INFO - Epoch 12/50, Train Loss: 0.9382, Val Loss: 0.9882, Val Acc: 0.4800
-Training model:  24%|██▍       | 12/50 [00:28<01:29,  2.35s/it]2025-12-13 15:46:56,086 - INFO - Epoch 13/50, Train Loss: 0.8791, Val Loss: 1.0031, Val Acc: 0.4400
-2025-12-13 15:46:56,086 - INFO - EarlyStopping counter: 1 out of 5
-Training model:  26%|██▌       | 13/50 [00:30<01:26,  2.33s/it]2025-12-13 15:46:58,379 - INFO - Epoch 14/50, Train Loss: 0.9305, Val Loss: 1.0103, Val Acc: 0.5200
-2025-12-13 15:46:58,379 - INFO - EarlyStopping counter: 2 out of 5
-Training model:  28%|██▊       | 14/50 [00:32<01:23,  2.32s/it]2025-12-13 15:47:00,781 - INFO - Epoch 15/50, Train Loss: 0.9402, Val Loss: 1.0249, Val Acc: 0.4400
-2025-12-13 15:47:00,781 - INFO - EarlyStopping counter: 3 out of 5
-Training model:  30%|███       | 15/50 [00:35<01:22,  2.35s/it]2025-12-13 15:47:03,103 - INFO - Epoch 16/50, Train Loss: 0.9239, Val Loss: 0.9952, Val Acc: 0.5200
-2025-12-13 15:47:03,103 - INFO - EarlyStopping counter: 4 out of 5
-Training model:  32%|███▏      | 16/50 [00:37<01:19,  2.34s/it]2025-12-13 15:47:05,403 - INFO - Epoch 17/50, Train Loss: 0.9161, Val Loss: 0.9899, Val Acc: 0.5200
-2025-12-13 15:47:05,403 - INFO - EarlyStopping counter: 5 out of 5
-2025-12-13 15:47:05,403 - INFO - Early stopping triggered
-Training model:  32%|███▏      | 16/50 [00:39<01:24,  2.49s/it]
-2025-12-13 15:47:05,405 - INFO - Loaded best model weights
-2025-12-13 15:47:05,405 - INFO - [1.1604016593524389, 1.0174965006964547, 0.9675302079745701, 1.000047036579677, 1.0002604041780745, 0.9780389155660357, 0.9447798984391349, 0.9429315839494977, 0.9352687426975795, 0.961952941758292, 0.9320479461124965, 0.9382380247116089, 0.8791399768420628, 0.9305029170853751, 0.9402376413345337, 0.9238782780511039, 0.9161243523870196]
-2025-12-13 15:47:05,407 - INFO - Best CNN weights saved to /app/src/models/best_cnn_weights.pth
-[run.sh] Running evaluation at 2025-12-13T15:47:05+00:00
-2025-12-13 15:47:08,907 - INFO - Calculating baseline (majority class) performance metrics
-2025-12-13 15:47:08,908 - INFO - Majority class: 1_Pronacio
+2025-12-14 08:57:06,556 - INFO - Starting training with hyperparameters: num_epochs=50, early_stopping_patience=5, learning_rate=0.0005
+Training model:   0%|          | 0/50 [00:00<?, ?it/s]2025-12-14 08:57:08,831 - INFO - Epoch 1/50, Train Loss: 1.1326, Val Loss: 1.2256, Val Acc: 0.3673
+Training model:   2%|▏         | 1/50 [00:02<01:51,  2.27s/it]2025-12-14 08:57:11,018 - INFO - Epoch 2/50, Train Loss: 1.0594, Val Loss: 0.9733, Val Acc: 0.4490
+Training model:   4%|▍         | 2/50 [00:04<01:46,  2.22s/it]2025-12-14 08:57:13,257 - INFO - Epoch 3/50, Train Loss: 1.0352, Val Loss: 0.9539, Val Acc: 0.3878
+Training model:   6%|▌         | 3/50 [00:06<01:44,  2.23s/it]2025-12-14 08:57:15,556 - INFO - Epoch 4/50, Train Loss: 1.0115, Val Loss: 0.9585, Val Acc: 0.4490
+2025-12-14 08:57:15,556 - INFO - EarlyStopping counter: 1 out of 5
+Training model:   8%|▊         | 4/50 [00:08<01:43,  2.26s/it]2025-12-14 08:57:17,662 - INFO - Epoch 5/50, Train Loss: 0.9884, Val Loss: 1.0308, Val Acc: 0.4082
+2025-12-14 08:57:17,662 - INFO - EarlyStopping counter: 2 out of 5
+Training model:  10%|█         | 5/50 [00:11<01:39,  2.20s/it]2025-12-14 08:57:19,783 - INFO - Epoch 6/50, Train Loss: 0.9863, Val Loss: 1.0341, Val Acc: 0.4286
+2025-12-14 08:57:19,783 - INFO - EarlyStopping counter: 3 out of 5
+Training model:  12%|█▏        | 6/50 [00:13<01:35,  2.18s/it]2025-12-14 08:57:21,904 - INFO - Epoch 7/50, Train Loss: 0.9453, Val Loss: 1.1122, Val Acc: 0.4082
+2025-12-14 08:57:21,904 - INFO - EarlyStopping counter: 4 out of 5
+Training model:  14%|█▍        | 7/50 [00:15<01:32,  2.16s/it]2025-12-14 08:57:24,064 - INFO - Epoch 8/50, Train Loss: 0.9851, Val Loss: 0.9826, Val Acc: 0.3878
+2025-12-14 08:57:24,064 - INFO - EarlyStopping counter: 5 out of 5
+2025-12-14 08:57:24,064 - INFO - Early stopping triggered
+Training model:  14%|█▍        | 7/50 [00:17<01:47,  2.50s/it]
+2025-12-14 08:57:24,066 - INFO - Loaded best model weights
+2025-12-14 08:57:24,066 - INFO - [1.132578079899152, 1.0593825777371724, 1.0352008442083995, 1.0114859243233998, 0.9884283741315206, 0.986264114578565, 0.945332537094752, 0.985081767042478]
+2025-12-14 08:57:24,068 - INFO - Best CNN weights saved to /app/src/models/best_cnn_weights.pth
+[run.sh] Running evaluation at 2025-12-14T08:57:24+00:00
+2025-12-14 08:57:27,449 - INFO - Calculating baseline (majority class) performance metrics
+2025-12-14 08:57:27,449 - INFO - Majority class: 1_Pronacio
 /opt/conda/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
-2025-12-13 15:47:08,918 - INFO - Baseline balanced accuracy: 50.00%
-2025-12-13 15:47:08,918 - INFO - Baseline precision: 2.04%
-2025-12-13 15:47:08,918 - INFO - Baseline recall: 14.29%
-2025-12-13 15:47:08,918 - INFO - Baseline F1-score: 3.57%
+2025-12-14 08:57:27,459 - INFO - Baseline balanced accuracy: 50.00%
+2025-12-14 08:57:27,459 - INFO - Baseline precision: 2.04%
+2025-12-14 08:57:27,459 - INFO - Baseline recall: 14.29%
+2025-12-14 08:57:27,459 - INFO - Baseline F1-score: 3.57%
 /opt/conda/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
 /opt/conda/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
 /opt/conda/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
-2025-12-13 15:47:08,926 - INFO - Detailed Classification Report: 
+2025-12-14 08:57:27,466 - INFO - Detailed Classification Report: 
               precision    recall  f1-score   support
 
   1_Pronacio       0.14      1.00      0.25         7
@@ -248,96 +233,107 @@ weighted avg       0.02      0.14      0.04        49
 
 /opt/conda/lib/python3.11/site-packages/torch/cuda/__init__.py:182: UserWarning: CUDA initialization: Unexpected error from cudaGetDeviceCount(). Did you run some cuda functions before calling NumCudaDevices() that might have already set an error? Error 500: named symbol not found (Triggered internally at /pytorch/c10/cuda/CUDAFunctions.cpp:109.)
   return torch._C._cuda_getDeviceCount() > 0
-2025-12-13 15:47:08,932 - INFO - CUDA not available
-2025-12-13 15:47:08,932 - INFO - Device set to: cpu
-2025-12-13 15:47:14,301 - INFO - Label mapping: {np.str_('1_Pronacio'): 0, np.str_('2_Neutralis'): 1}
-2025-12-13 15:47:14,302 - INFO - Test loader size: 49
-2025-12-13 15:47:14,308 - INFO - Model loaded from /app/src/models/baseline_weights.pth
-2025-12-13 15:47:14,308 - INFO - Evaluating Baseline CNN on consensus test set
-2025-12-13 15:47:14,350 - INFO - network balanced accuracy: 40.48%
-2025-12-13 15:47:14,350 - INFO - network precision: 58.80%
-2025-12-13 15:47:14,350 - INFO - network recall: 18.37%
-2025-12-13 15:47:14,350 - INFO - network F1 score: 17.14%
-2025-12-13 15:47:14,356 - INFO - Detailed Classification Report: 
+2025-12-14 08:57:27,473 - INFO - CUDA not available
+2025-12-14 08:57:27,473 - INFO - Device set to: cpu
+2025-12-14 08:57:32,926 - INFO - Label mapping: {np.str_('1_Pronacio'): 0, np.str_('2_Neutralis'): 1}
+2025-12-14 08:57:32,927 - INFO - Test loader size: 49
+2025-12-14 08:57:32,932 - INFO - Model loaded from /app/src/models/baseline_weights.pth
+2025-12-14 08:57:32,932 - INFO - Evaluating Baseline CNN on consensus test set
+2025-12-14 08:57:32,974 - INFO - network balanced accuracy: 42.86%
+2025-12-14 08:57:32,974 - INFO - network precision: 66.03%
+2025-12-14 08:57:32,974 - INFO - network recall: 22.45%
+2025-12-14 08:57:32,974 - INFO - network F1 score: 23.55%
+2025-12-14 08:57:32,980 - INFO - Detailed Classification Report: 
               precision    recall  f1-score   support
 
-           0       0.12      0.71      0.20         7
-           1       0.67      0.10      0.17        42
+           0       0.12      0.71      0.21         7
+           1       0.75      0.14      0.24        42
 
-    accuracy                           0.18        49
-   macro avg       0.39      0.40      0.18        49
-weighted avg       0.59      0.18      0.17        49
+    accuracy                           0.22        49
+   macro avg       0.44      0.43      0.22        49
+weighted avg       0.66      0.22      0.24        49
 
-2025-12-13 15:47:14,440 - INFO - Best model loaded from /app/src/models/best_cnn_weights.pth
-2025-12-13 15:47:14,440 - INFO - Evaluating Best CNN on consensus test set
-2025-12-13 15:47:14,644 - INFO - network balanced accuracy: 50.00%
-2025-12-13 15:47:14,644 - INFO - network precision: 75.51%
-2025-12-13 15:47:14,644 - INFO - network recall: 24.49%
-2025-12-13 15:47:14,644 - INFO - network F1 score: 24.49%
-2025-12-13 15:47:14,650 - INFO - Detailed Classification Report: 
+2025-12-14 08:57:33,065 - INFO - Best model loaded from /app/src/models/best_cnn_weights.pth
+2025-12-14 08:57:33,065 - INFO - Evaluating Best CNN on consensus test set
+/opt/conda/lib/python3.11/site-packages/sklearn/metrics/_classification.py:2801: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/opt/conda/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+2025-12-14 08:57:33,267 - INFO - network balanced accuracy: 51.19%
+2025-12-14 08:57:33,267 - INFO - network precision: 88.42%
+2025-12-14 08:57:33,267 - INFO - network recall: 16.33%
+2025-12-14 08:57:33,267 - INFO - network F1 score: 8.53%
+/opt/conda/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/opt/conda/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/opt/conda/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+2025-12-14 08:57:33,274 - INFO - Detailed Classification Report: 
               precision    recall  f1-score   support
 
-           0       0.14      0.86      0.24         7
-           1       0.86      0.14      0.24        42
+           0       0.19      1.00      0.32         7
+           1       1.00      0.02      0.05        42
+           2       0.00      0.00      0.00         0
 
-    accuracy                           0.24        49
-   macro avg       0.50      0.50      0.24        49
-weighted avg       0.76      0.24      0.24        49
+    accuracy                           0.16        49
+   macro avg       0.40      0.34      0.12        49
+weighted avg       0.88      0.16      0.09        49
 
-[run.sh] Running inference at 2025-12-13T15:47:15+00:00
-2025-12-13 15:47:18,240 - INFO - CUDA not available
-2025-12-13 15:47:18,240 - INFO - Device set to: cpu
+[run.sh] Running inference at 2025-12-14T08:57:33+00:00
 /opt/conda/lib/python3.11/site-packages/torch/cuda/__init__.py:182: UserWarning: CUDA initialization: Unexpected error from cudaGetDeviceCount(). Did you run some cuda functions before calling NumCudaDevices() that might have already set an error? Error 500: named symbol not found (Triggered internally at /pytorch/c10/cuda/CUDAFunctions.cpp:109.)
   return torch._C._cuda_getDeviceCount() > 0
-2025-12-13 15:47:23,491 - INFO - Label mapping: {np.str_('1_Pronacio'): 0, np.str_('2_Neutralis'): 1}
-2025-12-13 15:47:23,501 - INFO - Best model loaded from /app/src/models/best_cnn_weights.pth
-2025-12-13 15:47:23,700 - INFO - Image: D6AE9F_sajat_reszvevo03_01.jpg, Predicted Label: 2_Neutralis
-2025-12-13 15:47:23,700 - INFO - Image: D6AE9F_sajat_reszvevo03_02.jpg, Predicted Label: 2_Neutralis
-2025-12-13 15:47:23,700 - INFO - Image: D6AE9F_sajat_reszvevo03_03.jpg, Predicted Label: 2_Neutralis
-2025-12-13 15:47:23,700 - INFO - Image: D6AE9F_sajat_reszvevo03_04.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,700 - INFO - Image: ECSGGY_sajat_reszvevo01_04.jpg, Predicted Label: 2_Neutralis
-2025-12-13 15:47:23,700 - INFO - Image: ECSGGY_sajat_reszvevo02_02.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,700 - INFO - Image: ECSGGY_sajat_reszvevo02_03.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,700 - INFO - Image: ECSGGY_sajat_reszvevo02_04.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,700 - INFO - Image: ECSGGY_sajat_reszvevo02_05.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,700 - INFO - Image: ECSGGY_sajat_reszvevo06_01.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,700 - INFO - Image: ECSGGY_sajat_reszvevo07_01.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,700 - INFO - Image: ECSGGY_sajat_reszvevo08_01.jpg, Predicted Label: 2_Neutralis
-2025-12-13 15:47:23,700 - INFO - Image: ECSGGY_sajat_reszvevo09_01.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,700 - INFO - Image: ECSGGY_sajat_reszvevo09_02.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,700 - INFO - Image: ECSGGY_sajat_reszvevo09_03.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,700 - INFO - Image: ECSGGY_sajat_reszvevo_03_01.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,701 - INFO - Image: ECSGGY_sajat_reszvevo_03_02.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,701 - INFO - Image: ECSGGY_sajat_reszvevo_03_03.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,701 - INFO - Image: ECSGGY_sajat_reszvevo_03_04.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,701 - INFO - Image: ECSGGY_sajat_reszvevo_03_05.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,701 - INFO - Image: ECSGGY_sajat_reszvevo_04_01.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,701 - INFO - Image: ECSGGY_sajat_reszvevo_04_02.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,701 - INFO - Image: ECSGGY_sajat_reszvevo_04_03.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,701 - INFO - Image: ECSGGY_sajat_reszvevo_04_04.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,701 - INFO - Image: ECSGGY_sajat_reszvevo_04_05.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,701 - INFO - Image: ECSGGY_sajat_reszvevo_05_01.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,701 - INFO - Image: ECSGGY_sajat_reszvevo_05_02.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,701 - INFO - Image: ECSGGY_sajat_reszvevo_05_03.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,701 - INFO - Image: ECSGGY_sajat_reszvevo_05_04.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,701 - INFO - Image: ECSGGY_sajat_reszvevo_05_05.jpg, Predicted Label: 2_Neutralis
-2025-12-13 15:47:23,701 - INFO - Image: FO6K58_sajat_resztvevo01_01.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,701 - INFO - Image: FO6K58_sajat_resztvevo01_02.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,701 - INFO - Image: FO6K58_sajat_resztvevo01_03.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,701 - INFO - Image: FO6K58_sajat_resztvevo01_04.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,701 - INFO - Image: FO6K58_sajat_resztvevo02_01.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,701 - INFO - Image: FO6K58_sajat_resztvevo02_02.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,701 - INFO - Image: FO6K58_sajat_resztvevo02_03.jpg, Predicted Label: 2_Neutralis
-2025-12-13 15:47:23,701 - INFO - Image: FO6K58_sajat_resztvevo02_04.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,701 - INFO - Image: FO6K58_sajat_resztvevo03_01.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,701 - INFO - Image: FO6K58_sajat_resztvevo03_02.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,702 - INFO - Image: FO6K58_sajat_resztvevo03_03.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,702 - INFO - Image: FO6K58_sajat_resztvevo03_04.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,702 - INFO - Image: FO6K58_sajat_resztvevo04_01.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,702 - INFO - Image: FO6K58_sajat_resztvevo04_02.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,702 - INFO - Image: FO6K58_sajat_resztvevo04_03.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,702 - INFO - Image: FO6K58_sajat_resztvevo04_04.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,702 - INFO - Image: FO6K58_sajat_resztvevo05_01.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,702 - INFO - Image: FO6K58_sajat_resztvevo05_02.jpg, Predicted Label: 1_Pronacio
-2025-12-13 15:47:23,702 - INFO - Image: FO6K58_sajat_resztvevo05_03.jpg, Predicted Label: 1_Pronacio
-[run.sh] Pipeline finished at 2025-12-13T15:47:24+00:00
+2025-12-14 08:57:37,063 - INFO - CUDA not available
+2025-12-14 08:57:37,063 - INFO - Device set to: cpu
+2025-12-14 08:57:47,194 - INFO - Label mapping: {np.str_('1_Pronacio'): 0, np.str_('2_Neutralis'): 1}
+2025-12-14 08:57:47,208 - INFO - Best model loaded from /app/src/models/best_cnn_weights.pth
+2025-12-14 08:57:47,609 - INFO - Image: D6AE9F_sajat_reszvevo03_01.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,609 - INFO - Image: D6AE9F_sajat_reszvevo03_02.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,609 - INFO - Image: D6AE9F_sajat_reszvevo03_03.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,609 - INFO - Image: D6AE9F_sajat_reszvevo03_04.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,609 - INFO - Image: ECSGGY_sajat_reszvevo01_04.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,609 - INFO - Image: ECSGGY_sajat_reszvevo02_02.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,609 - INFO - Image: ECSGGY_sajat_reszvevo02_03.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,609 - INFO - Image: ECSGGY_sajat_reszvevo02_04.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,609 - INFO - Image: ECSGGY_sajat_reszvevo02_05.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,609 - INFO - Image: ECSGGY_sajat_reszvevo06_01.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,609 - INFO - Image: ECSGGY_sajat_reszvevo07_01.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,609 - INFO - Image: ECSGGY_sajat_reszvevo08_01.jpg, Predicted Label: 2_Neutralis
+2025-12-14 08:57:47,609 - INFO - Image: ECSGGY_sajat_reszvevo09_01.jpg, Predicted Label: 3_Szupinacio
+2025-12-14 08:57:47,609 - INFO - Image: ECSGGY_sajat_reszvevo09_02.jpg, Predicted Label: 3_Szupinacio
+2025-12-14 08:57:47,610 - INFO - Image: ECSGGY_sajat_reszvevo09_03.jpg, Predicted Label: 3_Szupinacio
+2025-12-14 08:57:47,610 - INFO - Image: ECSGGY_sajat_reszvevo_03_01.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,610 - INFO - Image: ECSGGY_sajat_reszvevo_03_02.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,610 - INFO - Image: ECSGGY_sajat_reszvevo_03_03.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,610 - INFO - Image: ECSGGY_sajat_reszvevo_03_04.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,610 - INFO - Image: ECSGGY_sajat_reszvevo_03_05.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,610 - INFO - Image: ECSGGY_sajat_reszvevo_04_01.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,610 - INFO - Image: ECSGGY_sajat_reszvevo_04_02.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,610 - INFO - Image: ECSGGY_sajat_reszvevo_04_03.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,610 - INFO - Image: ECSGGY_sajat_reszvevo_04_04.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,610 - INFO - Image: ECSGGY_sajat_reszvevo_04_05.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,610 - INFO - Image: ECSGGY_sajat_reszvevo_05_01.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,610 - INFO - Image: ECSGGY_sajat_reszvevo_05_02.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,610 - INFO - Image: ECSGGY_sajat_reszvevo_05_03.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,610 - INFO - Image: ECSGGY_sajat_reszvevo_05_04.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,610 - INFO - Image: ECSGGY_sajat_reszvevo_05_05.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,610 - INFO - Image: FO6K58_sajat_resztvevo01_01.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,610 - INFO - Image: FO6K58_sajat_resztvevo01_02.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,610 - INFO - Image: FO6K58_sajat_resztvevo01_03.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,610 - INFO - Image: FO6K58_sajat_resztvevo01_04.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,610 - INFO - Image: FO6K58_sajat_resztvevo02_01.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,610 - INFO - Image: FO6K58_sajat_resztvevo02_02.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,610 - INFO - Image: FO6K58_sajat_resztvevo02_03.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,610 - INFO - Image: FO6K58_sajat_resztvevo02_04.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,610 - INFO - Image: FO6K58_sajat_resztvevo03_01.jpg, Predicted Label: 3_Szupinacio
+2025-12-14 08:57:47,610 - INFO - Image: FO6K58_sajat_resztvevo03_02.jpg, Predicted Label: 3_Szupinacio
+2025-12-14 08:57:47,610 - INFO - Image: FO6K58_sajat_resztvevo03_03.jpg, Predicted Label: 3_Szupinacio
+2025-12-14 08:57:47,611 - INFO - Image: FO6K58_sajat_resztvevo03_04.jpg, Predicted Label: 3_Szupinacio
+2025-12-14 08:57:47,611 - INFO - Image: FO6K58_sajat_resztvevo04_01.jpg, Predicted Label: 3_Szupinacio
+2025-12-14 08:57:47,611 - INFO - Image: FO6K58_sajat_resztvevo04_02.jpg, Predicted Label: 3_Szupinacio
+2025-12-14 08:57:47,611 - INFO - Image: FO6K58_sajat_resztvevo04_03.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,611 - INFO - Image: FO6K58_sajat_resztvevo04_04.jpg, Predicted Label: 1_Pronacio
+2025-12-14 08:57:47,611 - INFO - Image: FO6K58_sajat_resztvevo05_01.jpg, Predicted Label: 3_Szupinacio
+2025-12-14 08:57:47,611 - INFO - Image: FO6K58_sajat_resztvevo05_02.jpg, Predicted Label: 3_Szupinacio
+2025-12-14 08:57:47,611 - INFO - Image: FO6K58_sajat_resztvevo05_03.jpg, Predicted Label: 1_Pronacio
+[run.sh] Pipeline finished at 2025-12-14T08:57:48+00:00

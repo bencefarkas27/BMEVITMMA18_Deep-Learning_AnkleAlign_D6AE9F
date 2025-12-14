@@ -58,11 +58,13 @@ def init_weights(m):
 
 def train_model(device, network, optimizer, loss_fn, num_epochs, train_loader, val_loader=None, patience=5):
     torch.cuda.empty_cache()
+    logger.info(f"Starting training with hyperparameters: num_epochs={num_epochs}, learning_rate={optimizer.param_groups[0]['lr']}")
 
     loss_values = []
 
     if val_loader is not None:
         early_stopping = EarlyStopping(patience=patience, verbose=True)
+        logger.info(f"Early stopping enabled with patience={patience}")
 
     network.train()
     for epoch in tqdm(range(num_epochs), desc='Training model'):

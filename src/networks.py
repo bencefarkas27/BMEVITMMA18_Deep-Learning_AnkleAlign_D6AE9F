@@ -15,9 +15,7 @@ class BaseLineNetWork(torch.nn.Module):
         )
         self.classifier = nn.Sequential(
             nn.Flatten(),
-            nn.Linear(32, 128),
-            nn.ReLU(),
-            nn.Linear(128, 64),
+            nn.Linear(32, 64),
             nn.ReLU(),
             nn.Linear(64, 3)
         )
